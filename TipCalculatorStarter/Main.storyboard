@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TipCalculatorStarter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5wb-pp-BwB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="129"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="849-Kz-JSs">
+                                        <rect key="frame" x="24" y="44" width="156.33333333333334" height="85"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" name="tcCharcoal"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AUD-fo-Pez">
+                                        <rect key="frame" x="302" y="71" width="51" height="31"/>
+                                        <color key="onTintColor" name="tcSeafoamGreen"/>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="AUD-fo-Pez" secondAttribute="trailing" constant="24" id="23e-Bt-3de"/>
+                                    <constraint firstItem="AUD-fo-Pez" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="849-Kz-JSs" secondAttribute="trailing" constant="20" id="I3b-A0-2db"/>
+                                    <constraint firstItem="849-Kz-JSs" firstAttribute="leading" secondItem="5wb-pp-BwB" secondAttribute="leading" constant="24" id="ZbL-im-VGZ"/>
+                                    <constraint firstItem="AUD-fo-Pez" firstAttribute="centerY" secondItem="849-Kz-JSs" secondAttribute="centerY" id="pvY-q7-SkR"/>
+                                    <constraint firstAttribute="bottom" secondItem="849-Kz-JSs" secondAttribute="bottom" id="z97-lk-Dqe"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NrY-HC-qp8">
+                                <rect key="frame" x="15" y="153" width="345" height="246.66666666666663"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jYe-8P-Rge">
+                                <rect key="frame" x="15" y="423.66666666666669" width="345" height="246.33333333333331"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7A-NX-sEV">
+                                <rect key="frame" x="15" y="694" width="345" height="60"/>
+                                <color key="backgroundColor" name="tcDarkBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="yg9-9c-Lhh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="tcOffWhite"/>
+                        <constraints>
+                            <constraint firstItem="5wb-pp-BwB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="11w-N6-zXN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="A7A-NX-sEV" secondAttribute="bottom" constant="24" id="5uY-8V-JIb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="5wb-pp-BwB" secondAttribute="bottom" constant="-85" id="7TL-Cz-wpQ"/>
+                            <constraint firstItem="jYe-8P-Rge" firstAttribute="top" secondItem="NrY-HC-qp8" secondAttribute="bottom" constant="24" id="8oJ-sc-3ak"/>
+                            <constraint firstItem="NrY-HC-qp8" firstAttribute="top" secondItem="5wb-pp-BwB" secondAttribute="bottom" constant="24" id="9i2-Ob-MFf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jYe-8P-Rge" secondAttribute="trailing" constant="15" id="E6z-5C-fMP"/>
+                            <constraint firstItem="5wb-pp-BwB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nfi-rd-Qur"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A7A-NX-sEV" secondAttribute="trailing" constant="15" id="Uy9-w5-UOZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NrY-HC-qp8" secondAttribute="trailing" constant="15" id="WcK-0z-Qdb"/>
+                            <constraint firstItem="jYe-8P-Rge" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="dHk-l8-8cc"/>
+                            <constraint firstItem="A7A-NX-sEV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="i7I-sD-Lz7"/>
+                            <constraint firstItem="NrY-HC-qp8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="l2c-81-aJl"/>
+                            <constraint firstItem="5wb-pp-BwB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ojO-Ru-2mg"/>
+                            <constraint firstItem="A7A-NX-sEV" firstAttribute="top" secondItem="jYe-8P-Rge" secondAttribute="bottom" constant="24" id="sSI-Ca-mhR"/>
+                            <constraint firstItem="jYe-8P-Rge" firstAttribute="height" secondItem="NrY-HC-qp8" secondAttribute="height" id="vnx-K4-IO4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="849-Kz-JSs" secondAttribute="top" id="y18-fE-hfV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="headerView" destination="5wb-pp-BwB" id="B3R-UP-gCH"/>
+                        <outlet property="titleLabel" destination="849-Kz-JSs" id="n5e-ld-MLa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.884057971014496" y="32.608695652173914"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="tcCharcoal">
+            <color red="0.28999999165534973" green="0.28999999165534973" blue="0.28999999165534973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tcDarkBlue">
+            <color red="0.16899999976158142" green="0.17599999904632568" blue="0.36100000143051147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tcOffWhite">
+            <color red="0.96899998188018799" green="0.96899998188018799" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tcSeafoamGreen">
+            <color red="0.34900000691413879" green="0.85500001907348633" blue="0.64300000667572021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
